@@ -52,5 +52,3 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
 [ Servidor municipal (API Python + PostgreSQL) ] 
        ↓ REST API
 [ AlbaMove WebApp (React) ]
-
-````
