@@ -44,7 +44,6 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
 ---
 
 ## 🗺️ Flujo de datos
-```text
 [ Sensor IoT en plaza ] 
        ↓ LoRaWAN/NB-IoT
 [ Gateway IoT ] 
