@@ -44,10 +44,36 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
 ---
 
 ## 🗺️ Flujo de datos
-[ Sensor IoT en plaza ] 
-       ↓ LoRaWAN/NB-IoT
-[ Gateway IoT ] 
-       ↓ MQTT
-[ Servidor municipal (API Python + PostgreSQL) ] 
-       ↓ REST API
-[ AlbaMove WebApp (React) ]
++------------------+       +---------------------+
+|                  |       |                     |
+|   Ciudadano      |<----->|   AlbaMove WebApp   |
+|  (Usuario final) | HTTPS |  (Frontend React)   |
+|                  |       |                     |
++------------------+       +----------+----------+
+                                      |
+                                      | API REST
+                                      v
+                       +--------------+---------------+
+                       |                              |
+                       |   Servidor Backend           |
+                       |   (FastAPI + PostgreSQL)     |
+                       |                              |
+                       +--------------+---------------+
+                                      ^
+                                      | MQTT / HTTP
+                                      |
+                       +--------------+---------------+
+                       |                              |
+                       |   Gateway IoT                |
+                       |   (Raspberry Pi)             |
+                       |                              |
+                       +--------------+---------------+
+                                      ^
+                                      | LoRaWAN / NB-IoT
+                                      |
+                       +--------------+---------------+
+                       |                              |
+                       |   Sensores en plaza          |
+                       |   (Nodos IoT: magnéticos)    |
+                       |                              |
+                       +------------------------------+
