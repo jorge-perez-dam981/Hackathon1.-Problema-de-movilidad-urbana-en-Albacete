@@ -77,4 +77,4 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
                        |   Sensores en plaza          |
                        |   (Nodos IoT: magnéticos)    |
                        |                              |
-                       +------------------------------+ ````
+                       +------------------------------+
