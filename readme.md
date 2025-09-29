@@ -44,6 +44,7 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
 ---
 
 ## 🗺️ Flujo de datos
+```
 +------------------+       +---------------------+
 |                  |       |                     |
 |   Ciudadano      |<----->|   AlbaMove WebApp   |
@@ -76,4 +77,4 @@ Ayudar a los ciudadanos de Albacete a encontrar aparcamiento rápido y reducir e
                        |   Sensores en plaza          |
                        |   (Nodos IoT: magnéticos)    |
                        |                              |
-                       +------------------------------+
+                       +------------------------------+ ```
